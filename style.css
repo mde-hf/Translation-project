@@ -1,5 +1,9 @@
 .text-box {
-    width: auto;
-    
-   
+    width: 400pt;
+    height: 100pt;
+  }
+
+  .btn {
+   margin-top: 20pt;
+   margin-bottom: auto;
   }
