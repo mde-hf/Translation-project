@@ -1,9 +1,17 @@
 .text-box {
   width: 400pt;
   height: 100pt;
+  margin-left: 350pt;
+  
 }
 
 .btn {
   margin-top: 20pt;
   margin-bottom: auto;
+}
+
+.heading {
+  text-align: center;
+  font-size: 30pt;
+  
 }
