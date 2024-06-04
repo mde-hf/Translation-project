@@ -8,10 +8,17 @@
 .btn {
   margin-top: 20pt;
   margin-bottom: auto;
+  margin-left: 520pt;
+  font-size: 15pt ;
 }
 
 .heading {
   text-align: center;
   font-size: 30pt;
   
+}
+
+.desc {
+font-size: 20pt;
+text-align: center;
 }
