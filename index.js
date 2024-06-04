@@ -1,24 +1,33 @@
+const apiUrl = "https://translate.yamen.eu/translate";
+const apiKey = 'a9153c42-41e6-416b-b597-7e86b6a8c25a';
 
-const apiUrl = "https://api-free.deepl.com/v2/translate";
 
-const apiKey = "30777254-61cd-4938-af3c-9c3b3a280a13:fx"
 
-const data = {
+document.getElementById("submit").addEventListener("click", function() {
+  const inputText = document.getElementById("inputBox").value;
 
-    text: ["How are you "],
-    target_lang: "DE"
-}
+  const data = {
+    q: [inputText],
+    source: "en",
+    target: "de",
+    format: "text",
+    api_key: apiKey
+  };
 
-const typeOfRequest = {
+  const typeOfRequest = {
     method: "POST",
     headers: {
-        "Authorization": `DeepL-Auth-Key ${apiKey}`,
-        "Content-Type": "application/json"
+        'Accept': "application/json",
+        'Content-Type': "application/json" 
     },
-
     body: JSON.stringify(data)
-}
+  };
 
-fetch(apiUrl, typeOfRequest)
+  fetch( apiUrl, typeOfRequest)
     .then(response => response.json())
-    .then(data => console.log(data))
+    .then(data => { 
+    console.log (data)
+      const translatedText = data.translatedText
+      document.getElementById("outputBox").innerText = translatedText;
+    });
+});
