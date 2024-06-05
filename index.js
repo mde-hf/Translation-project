@@ -5,11 +5,13 @@ const apiKey = 'a9153c42-41e6-416b-b597-7e86b6a8c25a';
 
 document.getElementById("submit").addEventListener("click", function () {
     const inputText = document.getElementById("inputBox").value;
+    const source = document.getElementById ("fromLang").value;
+    const target = document.getElementById ("toLang").value;
 
     const data = {
         q: inputText,
-        source: "en",
-        target: "de",
+        source: source,
+        target: target,
         format: "text",
         api_key: apiKey
     };
