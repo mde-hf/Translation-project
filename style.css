@@ -1,8 +1,7 @@
 .text-box {
   width: 400pt;
   height: 100pt;
-  margin-left: 350pt;
-  
+  margin-left: 350pt;  
 }
 
 .btn {
@@ -21,4 +20,11 @@
 .desc {
 font-size: 20pt;
 text-align: center;
+}
+
+.langOptions {
+text-align: center;
+margin-top: 10pt;
+font-size: 15pt;
+
 }

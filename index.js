@@ -26,7 +26,6 @@ document.getElementById("submit").addEventListener("click", function () {
     fetch(apiUrl, typeOfRequest)
         .then(response => response.json())
         .then(data => {
-            console.log(data)
             const translatedText = data.translatedText
             document.getElementById("outputBox").innerText = translatedText;
         });
