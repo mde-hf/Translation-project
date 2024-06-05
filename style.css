@@ -15,11 +15,16 @@ body{
   align-items: center;
 
 }
+.button-container{
+  display: flex;
+  justify-content: space-between;
+}
 
 .btn {
   margin-top: 20pt;
   margin-bottom: auto;
   font-size: 15pt ;
+  margin-right: 20pt;
   
 }
 
