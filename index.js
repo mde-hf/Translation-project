@@ -34,7 +34,7 @@ document.getElementById("submit").addEventListener("click", function () {
 });
 
 document.getElementById("clear").addEventListener("click", function () {
-    document.getElementById("inputBox").value = " ";
-    document.getElementById("outputBox").value = " ";
+    document.getElementById("inputBox").innerText = '';
+    document.getElementById("outputBox").innerText = '';
 
 });
