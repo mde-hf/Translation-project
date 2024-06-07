@@ -29,12 +29,12 @@ document.getElementById("submit").addEventListener("click", function () {
         .then(response => response.json())
         .then(data => {
             const translatedText = data.translatedText
-            document.getElementById("outputBox").innerText = translatedText;
+            document.getElementById("outputBox").value = translatedText;
         });
 });
 
 document.getElementById("clear").addEventListener("click", function () {
-    document.getElementById("inputBox").innerText = '';
-    document.getElementById("outputBox").innerText = '';
+    document.getElementById("inputBox").value = '';
+    document.getElementById("outputBox").value = '';
 
 });
